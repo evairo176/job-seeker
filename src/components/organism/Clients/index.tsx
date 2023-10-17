@@ -6,7 +6,7 @@ type ClientsProps = {};
 
 const Clients = (props: ClientsProps) => {
   return (
-    <div className="relative z-10">
+    <div className="relative z-10 mt-12">
       <div className="text-lg text-muted-foreground">
         Companies we helped grow
       </div>
