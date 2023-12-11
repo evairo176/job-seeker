@@ -40,7 +40,15 @@ const FeaturedJobItem = ({
       </div>
       <div className="flex flex-wrap gap-2">
         {categories.map((row, key) => {
-          return <Badge key={key}>{row}</Badge>;
+          return (
+            <Badge
+              variant={"outline"}
+              className="rounded border-primary bg-primary/5 text-primary"
+              key={key}
+            >
+              {row}
+            </Badge>
+          );
         })}
       </div>
     </div>

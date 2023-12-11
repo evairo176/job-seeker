@@ -3,6 +3,7 @@ import Category from "@/components/organism/Category";
 import Clients from "@/components/organism/Clients";
 import FeaturedJobs from "@/components/organism/FeaturedJobs";
 import Hero from "@/components/organism/Hero";
+import LatesJobs from "@/components/organism/LatesJobs";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Category />
       <BannerSignUp />
       <FeaturedJobs />
+      <LatesJobs />
     </div>
   );
 }
