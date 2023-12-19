@@ -1,5 +1,5 @@
-import { Input } from "@/components/ui/input";
 import React from "react";
+import { Input } from "@/components/ui/input";
 import { BiSearchAlt } from "react-icons/bi";
 import { GrMapLocation } from "react-icons/gr";
 import {

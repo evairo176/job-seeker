@@ -20,6 +20,8 @@ const LatesJobs = (props: Props) => {
               jobType="Full-Time"
               categories={["Marketing", "Design"]}
               desc="Description"
+              applicants={0}
+              needs={0}
             />
           );
         })}

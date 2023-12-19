@@ -12,6 +12,7 @@ const FeaturedJobs = (props: FeaturedJobsProps) => {
         {[0, 1, 2].map((row, key) => {
           return (
             <FeaturedJobItem
+              key={key}
               image="/images/company.png"
               jobType="Full-Time"
               name="Email Marketing"

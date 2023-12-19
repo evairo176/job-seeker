@@ -33,7 +33,7 @@ const Hero = (props: HeroProps) => {
           src={hero}
           width={501}
           height={71}
-          objectFit="contain"
+          className="object-contain"
         />
       </div>
     </div>
