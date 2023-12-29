@@ -1,9 +1,11 @@
+"use client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { JobType } from "@/types/clients";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 interface JobCardInterface extends JobType {}
@@ -19,8 +21,13 @@ const JobCard = ({
   needs,
   type,
 }: JobCardInterface) => {
+  const router = useRouter();
+
   return (
-    <div className="w-full border mb-5 p-6 border-border flex flex-col md:flex-row justify-between items-center">
+    <div
+      onClick={() => router.push("/detail/job/1")}
+      className="w-full border mb-5 p-6 border-border flex flex-col md:flex-row justify-between items-center"
+    >
       <div className="flex flex-row item-start gap-6">
         <div>
           <Image src={image} alt={image} width={64} height={64} />

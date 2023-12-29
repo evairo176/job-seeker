@@ -26,6 +26,7 @@ interface CheckboxFormInterface {
 }
 
 const CheckboxForm = ({ form, items, name, label }: CheckboxFormInterface) => {
+  console.log(name);
   return (
     <Accordion
       defaultValue={name}

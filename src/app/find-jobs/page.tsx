@@ -14,6 +14,8 @@ const FindJobsPage = (props: Props) => {
     resolver: zodResolver(formFilterSchema),
     defaultValues: {
       categories: [],
+      type_employe: [],
+      salary: [],
     },
   });
 
